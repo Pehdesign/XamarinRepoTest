@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Hello">Hello World, Click Me!</string>
+    <string name="ApplicationName">CoursesAndroid</string>
+
+  <string name="ButtonPrev">Prev</string>
+  <string name="ButtonNext">Next</string>
+
+  <string name="TextTitle">Text Title</string>
+</resources>

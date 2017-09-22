@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:text="@string/ButtonPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:padding="16dp"
+        android:id="@+id/buttonPrev" />
+    <Button
+        android:text="@string/ButtonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="16dp"
+        android:id="@+id/buttonNext" />
+    <TextView
+        android:text="@string/TextTitle"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/buttonPrev"
+        android:layout_toLeftOf="@id/buttonNext"
+        android:gravity="center"
+        android:padding="16dp"
+        android:id="@+id/textTitle" />
+    <TextView
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textTitle"
+        android:id="@+id/textDesc"
+        android:padding="8dp"
+        android:gravity="center_horizontal" />
+    <ImageView
+        android:src="@drawable/img2"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter"
+        android:id="@+id/imageCourse"
+        android:layout_height="match_parent"
+        android:layout_above="@id/textDesc" />
+</RelativeLayout>
