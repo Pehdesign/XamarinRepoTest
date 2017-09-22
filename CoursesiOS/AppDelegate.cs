@@ -16,6 +16,8 @@ namespace CoursesiOS
             set;
         }
 
+        CourseViewController viewController;
+
         public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
             // create a new window instance based on the screen size
@@ -23,6 +25,9 @@ namespace CoursesiOS
 
             // If you have defined a root view controller, set it here:
             // Window.RootViewController = myViewController;
+
+            viewController = new CourseViewController();
+            Window.RootViewController = viewController;
 
             // make the window visible
             Window.MakeKeyAndVisible();
