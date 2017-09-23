@@ -20,17 +20,20 @@ namespace CoursesiOS
 
 		[Outlet]
 		UIKit.UILabel labelTitle { get; set; }
+
+		[Action ("UIButton136_TouchUpInside:")]
+		partial void UIButton136_TouchUpInside (UIKit.UIButton sender);
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (buttonPrev != null) {
-				buttonPrev.Dispose ();
-				buttonPrev = null;
-			}
-
 			if (buttonNext != null) {
 				buttonNext.Dispose ();
 				buttonNext = null;
+			}
+
+			if (buttonPrev != null) {
+				buttonPrev.Dispose ();
+				buttonPrev = null;
 			}
 
 			if (labelTitle != null) {
